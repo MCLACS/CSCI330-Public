@@ -1,0 +1,5 @@
+Installing gtk3 development environment:
+	sudo apt-get install libgtkmm-3.0-dev
+
+Mounting a VBox Share:
+	sudo mount -t vboxsf -o rw,uid=1000,gid=1000 <vbox share name> <dir>

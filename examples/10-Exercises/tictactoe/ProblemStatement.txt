@@ -1,0 +1,17 @@
+Write a function called readfile that reads in the state of tic-tac-toe game into a single vector<char> (one dimensional) and returns the vector.  The state will be stored in a file such that each line in the file contains a piece on the board (X or O), or an empty square (-).  The first line in the file is the piece at location (0,0), the second line in the file is the piece at location (0,1), and so on.
+
+Next, create a function called gameover that takes a vector<char> that contains the tic-tac-toe game state that was returned from the readfile function.  Your gameover function should return true if the game state it was pased is complete, meaning somebody won the game or it was a tie, or false if the game is still ongoing.
+
+For example, the following file represents a game in which somebody wins, so your function should return true:
+
+x
+o
+-
+o
+x
+-
+-
+-
+x
+
+Test your readfile and gameover functions on the six files provided.  For files 1-5 your gameover function should return true.  For the last file your function should return false.

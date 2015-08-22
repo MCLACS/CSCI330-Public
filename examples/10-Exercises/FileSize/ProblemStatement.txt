@@ -1,0 +1,5 @@
+Write a program that asks the user to enter the name of a text file in the current directory, and then prints the size, in bytes, of the file.  Your program should produce an error if the file cannot be found.  You can assume that each character in the file represents a single byte.  
+
+Test your program by using the "ls -al" command in the termninal to see the acutal size of a file.  Your solution might produce a size that is smaller than the actual size.  If so, why?  Can you change your program to get the size spot on?
+
+HINT: You might find the FileReader class and userinput example form unit 04 to be helpful for this exercise.

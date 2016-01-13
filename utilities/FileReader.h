@@ -10,6 +10,7 @@ class FileReader
 {
 public:
     FileReader(const char * file);
+    FileReader(const string& s);
     virtual ~FileReader();
     bool endOfFile();
     string readString();

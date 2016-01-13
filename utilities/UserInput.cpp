@@ -13,10 +13,31 @@ void checkForError()
 	}
 }
 
+string UserInput::readString()
+{
+	return readString("");
+}
+
+int UserInput::readInt()
+{
+	return readInt("");
+}
+
+double UserInput::readDouble()
+{
+	return readDouble("");
+}
+
+char UserInput::readChar()
+{
+	return readChar("");
+}
+
+
 string UserInput::readString(const char * prompt)
 {
   string s;
-  cout << prompt << " ";
+  cout << prompt;
   getline(cin, s);
   checkForError();
   return s;
@@ -25,7 +46,7 @@ string UserInput::readString(const char * prompt)
 int UserInput::readInt(const char * prompt)
 {
   int i(0);
-  cout << prompt << " ";
+  cout << prompt;
   cin >> i;
   cin.ignore(1000, '\n');
   checkForError();
@@ -35,7 +56,7 @@ int UserInput::readInt(const char * prompt)
 double UserInput::readDouble(const char * prompt)
 {
   double d(0);
-  cout << prompt << " ";
+  cout << prompt;
   cin >> d;
   cin.ignore(1000, '\n');
   checkForError();
@@ -45,7 +66,7 @@ double UserInput::readDouble(const char * prompt)
 char UserInput::readChar(const char * prompt)
 {
   char ch(0);
-  cout << prompt << " ";
+  cout << prompt;
   cin >> ch;
   cin.ignore(1000, '\n');
   checkForError();

@@ -4,6 +4,13 @@
 
 using namespace std;
 
+FileReader:: FileReader(const string& s)
+{
+  m_input.open(s.c_str());
+  if (!m_input.is_open())
+      throw "Error: file not found";
+}
+
 FileReader::FileReader(const char * file)
 {
     m_input.open(file);

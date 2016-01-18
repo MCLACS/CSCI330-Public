@@ -1,5 +1,5 @@
 PROGRAM = Utilities
-FILES = FileReader.cpp UtilsTest.cpp UserInput.cpp
+FILES = FileReader.cpp UtilsTest.cpp UserInput.cpp Helper.cpp
 
 all: run
 run: zip
@@ -18,7 +18,7 @@ build:
 	clear
 	clear
 	clear
-	g++ -std=c++11 $(FILES) -o $(PROGRAM).o
+	g++ $(FILES) -o $(PROGRAM).o
 
 clean:
 	rm -f *.zip

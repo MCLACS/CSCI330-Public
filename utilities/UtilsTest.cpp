@@ -1,5 +1,6 @@
 #include "FileReader.h"
 #include "UserInput.h"
+#include "helper.h"
 #include <iostream>
 
 using namespace std;
@@ -33,6 +34,14 @@ int main()
     cout << i.readDouble("Enter a double:") << endl;
     cout << i.readChar("Enter an char:") << endl;
     cout << i.readString("Enter an string:") << endl;
+
+    cout << trim(string("   ABCDE   ")) << endl;
+    vector<string> ret = split(string("A,B,C,D,E"), ',');
+    for (vector<string>::const_iterator it = ret.begin();
+         it != ret.end(); it++)
+     {
+        cout << *it << endl;
+     }
 
   }
   catch (const char * msg)

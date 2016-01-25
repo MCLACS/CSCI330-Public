@@ -4,16 +4,22 @@
 
 using namespace std;
 
-FileReader:: FileReader(const string& s)
+FileReader::FileReader(const FileReader& fr)
+  : m_fileName(fr.m_fileName), m_input(), m_lastLine()
 {
-  m_input.open(s.c_str());
+  m_input.open(m_fileName.c_str());
+}
+
+FileReader::FileReader(const string& s) : m_fileName(s), m_input(), m_lastLine()
+{
+  m_input.open(m_fileName.c_str());
   if (!m_input.is_open())
       throw "Error: file not found";
 }
 
-FileReader::FileReader(const char * file)
+FileReader::FileReader(const char * s) : m_fileName(s), m_input(), m_lastLine()
 {
-    m_input.open(file);
+    m_input.open(m_fileName.c_str());
     if (!m_input.is_open())
         throw "Error: file not found";
 }

@@ -11,6 +11,7 @@ class FileReader
 public:
     FileReader(const char * file);
     FileReader(const string& s);
+    FileReader(const FileReader& fr);
     virtual ~FileReader();
     bool endOfFile();
     string readString();
@@ -20,6 +21,7 @@ public:
 private:
     ifstream m_input;
     string m_lastLine;
+    string m_fileName;
 };
 
 #endif

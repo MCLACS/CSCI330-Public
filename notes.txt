@@ -1,3 +1,6 @@
+Installing GNU C++
+	sudo apt-get install g++ build-essentials
+
 Installing gtk3 development environment:
 	sudo apt-get install libgtkmm-3.0-dev
 

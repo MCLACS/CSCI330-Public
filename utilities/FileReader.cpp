@@ -30,11 +30,11 @@ FileReader::~FileReader()
         m_input.close();
 }
 
-bool FileReader::endOfFile()
+bool FileReader::next()
 {
   string line("");
   getline(m_input, m_lastLine);
-  return (m_input.eof());
+  return (!m_input.eof());
 }
 
 string FileReader::readString()

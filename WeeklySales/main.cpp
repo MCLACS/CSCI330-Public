@@ -28,7 +28,7 @@ void reportSales(const char * file)
   double total(0);
 
   FileReader f(file);
-  while (!f.endOfFile())
+  while (f.next())
   {
       sales[days++] = f.readDouble();
   }
@@ -36,7 +36,7 @@ void reportSales(const char * file)
   cout << endl << "Sales report for " << file << endl;
   for (int d(0); d < days; d++)
   {
-    cout << "Day 1 sales: $" << sales[d] << endl;
+    cout << "Day " << (d+1) << " sales: $" << sales[d] << endl;
   }
 
   cout << "Weekly total sales: $" << sum(sales, days) << endl;

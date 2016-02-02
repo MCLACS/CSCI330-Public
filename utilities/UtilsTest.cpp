@@ -10,19 +10,19 @@ int main()
   try
   {
     FileReader in1("TestFileStrings.txt");
-    while (!in1.endOfFile())
+    while (in1.next())
     {
       cout << in1.readString() << endl;
     }
 
     FileReader in2("TestFileIntegers.txt");
-    while (!in2.endOfFile())
+    while (in2.next())
     {
       cout << in2.readInt() << endl;
     }
 
     FileReader in3("TestFileDoubles.txt");
-    while (!in3.endOfFile())
+    while (in3.next())
     {
       cout << in3.readDouble() << endl;
     }

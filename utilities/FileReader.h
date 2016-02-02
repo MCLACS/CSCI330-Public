@@ -13,7 +13,7 @@ public:
     FileReader(const string& s);
     FileReader(const FileReader& fr);
     virtual ~FileReader();
-    bool endOfFile();
+    bool next();
     string readString();
     int readInt();
     double readDouble();

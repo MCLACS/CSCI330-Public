@@ -15,8 +15,10 @@ public:
     virtual ~FileWriter();
     void write(const char * str);
     void write(const string & str);
+    void write(int i);
     void writeLine(const char * str);
     void writeLine(const string & str);
+    void writeLine(int i);
     void close();
 private:
     ofstream m_output;

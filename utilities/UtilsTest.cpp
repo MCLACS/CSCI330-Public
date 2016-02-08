@@ -49,6 +49,9 @@ int main()
      fw.writeLine(string("This is a second line"));
      fw.write(string("This is the start of a line "));
      fw.writeLine(string("This is the end of a line "));
+     fw.write(1);
+     fw.write(" ");
+     fw.writeLine(2);
      fw.writeLine("Now I am done");
      fw.close();
   }

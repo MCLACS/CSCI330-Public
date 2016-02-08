@@ -27,7 +27,7 @@ FileWriter::FileWriter(const char * s) : m_fileName(s), m_output()
 FileWriter::~FileWriter()
 {
   if (m_output.is_open())
-    close();
+    m_output.close();
 }
 
 void FileWriter::writeLine(const char * str)
@@ -40,6 +40,11 @@ void FileWriter::writeLine(const string & str)
   m_output << str << endl;
 }
 
+void FileWriter::writeLine(int i)
+{
+  m_output << i << endl;
+}
+
 void FileWriter::write(const char * str)
 {
   m_output << str;
@@ -48,6 +53,11 @@ void FileWriter::write(const char * str)
 void FileWriter::write(const string & str)
 {
   m_output << str;
+}
+
+void FileWriter::write(int i)
+{
+  m_output << i;
 }
 
 void FileWriter::close()

@@ -1,5 +1,5 @@
 PROGRAM = Utilities
-FILES = FileReader.cpp UtilsTest.cpp UserInput.cpp Helper.cpp
+FILES = FileWriter.cpp FileReader.cpp UtilsTest.cpp UserInput.cpp Helper.cpp
 
 all: run
 run: zip

@@ -1,4 +1,5 @@
 #include "FileReader.h"
+#include "FileWriter.h"
 #include "UserInput.h"
 #include "helper.h"
 #include <iostream>
@@ -43,6 +44,11 @@ int main()
         cout << *it << endl;
      }
 
+     FileWriter fw("testWrite.txt");
+     fw.writeLine("This is a line");
+     fw.writeLine(string("This is a second line"));
+     fw.writeLine("Now I am done");
+     fw.close();
   }
   catch (const char * msg)
   {

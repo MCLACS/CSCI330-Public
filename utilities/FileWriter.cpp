@@ -40,6 +40,16 @@ void FileWriter::writeLine(const string & str)
   m_output << str << endl;
 }
 
+void FileWriter::write(const char * str)
+{
+  m_output << str;
+}
+
+void FileWriter::write(const string & str)
+{
+  m_output << str;
+}
+
 void FileWriter::close()
 {
   m_output.close();

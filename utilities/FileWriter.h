@@ -13,6 +13,8 @@ public:
     FileWriter(const string& s);
     FileWriter(const FileWriter& fw);
     virtual ~FileWriter();
+    void write(const char * str);
+    void write(const string & str);
     void writeLine(const char * str);
     void writeLine(const string & str);
     void close();

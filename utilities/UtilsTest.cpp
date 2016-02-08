@@ -47,6 +47,8 @@ int main()
      FileWriter fw("testWrite.txt");
      fw.writeLine("This is a line");
      fw.writeLine(string("This is a second line"));
+     fw.write(string("This is the start of a line "));
+     fw.writeLine(string("This is the end of a line "));
      fw.writeLine("Now I am done");
      fw.close();
   }

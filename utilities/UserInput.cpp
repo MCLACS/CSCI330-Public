@@ -9,6 +9,7 @@ void checkForError()
 	if (cin.fail())
 	{
 		cin.clear();
+		cin.ignore(10000, '\n');
 		throw "Error: Invalid user input!";
 	}
 }
@@ -48,7 +49,6 @@ int UserInput::readInt(const char * prompt)
   int i(0);
   cout << prompt;
   cin >> i;
-  cin.ignore(1000, '\n');
   checkForError();
   return i;
 }
@@ -58,7 +58,6 @@ double UserInput::readDouble(const char * prompt)
   double d(0);
   cout << prompt;
   cin >> d;
-  cin.ignore(1000, '\n');
   checkForError();
   return d;
 }
@@ -68,7 +67,6 @@ char UserInput::readChar(const char * prompt)
   char ch(0);
   cout << prompt;
   cin >> ch;
-  cin.ignore(1000, '\n');
   checkForError();
   return ch;
 }

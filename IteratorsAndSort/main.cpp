@@ -28,7 +28,7 @@ int main()
 	string::iterator send = sChars.end();
 	for (string::iterator p = sbegin; p != send; p++)
 		cout << *p;
-	cout << endl;  
+	cout << endl;
 
 	sort(ary, ary+strlen(ary));
   for (char * p = abegin; p != aend; p++)
@@ -43,7 +43,14 @@ int main()
 	sort(sbegin, send);
 	for (string::iterator p = sbegin; p != send; p++)
 		cout << *p;
-	cout << endl;  
+	cout << endl;
+
+	const vector<char> constV(ary, ary+strlen(ary));
+  vector<char>::const_iterator cvbegin = constV.begin();
+	vector<char>::const_iterator cvend = constV.end();
+	for (vector<char>::const_iterator p = cvbegin; p != cvend; p++)
+		cout << *p;
+	cout << endl;
 
   return 0;
 }

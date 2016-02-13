@@ -8,13 +8,13 @@ using namespace std;
 
 int main()
 {
-  char ary[] = "MCLA ALL THE WAY!";
+  	char ary[] = "MCLA ALL THE WAY!";
 	vector<char> vChars(ary, ary+strlen(ary));
-  string sChars(ary);
+  	string sChars(ary);
 
-  char * abegin = ary;
-  char * aend = (ary+strlen(ary));
-  for (char * p = abegin; p != aend; p++)
+  	char * abegin = ary;
+  	char * aend = (ary+strlen(ary));
+  	for (char * p = abegin; p != aend; p++)
 		cout << *p;
 	cout << endl;
 
@@ -31,7 +31,7 @@ int main()
 	cout << endl;
 
 	sort(ary, ary+strlen(ary));
-  for (char * p = abegin; p != aend; p++)
+  	for (char * p = abegin; p != aend; p++)
 		cout << *p;
 	cout << endl;
 
@@ -46,11 +46,11 @@ int main()
 	cout << endl;
 
 	const vector<char> constV(ary, ary+strlen(ary));
-  vector<char>::const_iterator cvbegin = constV.begin();
+  	vector<char>::const_iterator cvbegin = constV.begin();
 	vector<char>::const_iterator cvend = constV.end();
 	for (vector<char>::const_iterator p = cvbegin; p != cvend; p++)
 		cout << *p;
 	cout << endl;
 
-  return 0;
+	return 0;
 }

@@ -1,0 +1,17 @@
+A, D, J, A, D, A, J, A, J, A
+A, A, D, D, A, J, A, D, A, D
+A, A, J, A, D, A, J
+A, D, D, D, D
+A, A, J, D, A, A, J, J
+A, A, J, A, J, J, J, A
+J, J, D, D, D, A, A, A, D
+A, J, J, D, A, A, J
+A, A, A, A, D, J, A, J, D, A
+D, A, J, D, J
+A, D, J, D, D, A, J, A, A, D
+A, A
+D, A, J, D, A, D, J
+A, A, S, J, J, A, A
+J, J, J, D, D, D, J, A, D
+A, A, S, J, A, A, D
+A, A, J, D, D, A, J, A, A, J

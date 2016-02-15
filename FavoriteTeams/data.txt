@@ -1,0 +1,8 @@
+Tom, Mets, Phillies
+Sally, Phillies, Braves
+John, Nationals
+Eric, Mets, Braves
+Jane, Miami, Phillies
+Steve, Mets, Miami
+Randy, Phillies
+Fred, Mets

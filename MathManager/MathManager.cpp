@@ -24,13 +24,13 @@ double max(double ary[], int size)
 
 double min(double ary[], int size)
 {
-	double max(DBL_MAX);
+	double min(DBL_MAX);
 	for (int i(0); i < size; i++)
 	{
-		if (ary[i] < max)
-			max = ary[i];
+		if (ary[i] < min)
+			min = ary[i];
 	}
-	return max;
+	return min;
 }
 
 double range(double ary[], int size)

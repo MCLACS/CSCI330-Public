@@ -31,15 +31,15 @@ double max(const vector<double> & nums)
 
 double min(const vector<double> & nums)
 {
-	double max(DBL_MAX);
+	double min(DBL_MAX);
 	vector<double>::const_iterator vbegin = nums.begin();
 	vector<double>::const_iterator vend = nums.end();
 	for (vector<double>::const_iterator p = vbegin; p != vend; p++)
 	{
-		if (*p < max)
-			max = *p;
+		if (*p < min)
+			min = *p;
 	}
-	return max;
+	return min;
 }
 
 double range(const vector<double> & nums)

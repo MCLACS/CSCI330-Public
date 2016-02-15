@@ -16,7 +16,7 @@ struct Counts
 
 int main()
 {
-	Counts c;
+	Counts c = {0,0,0,0,0};
 	FileReader in("data.txt");
 	while (in.next())
 	{

@@ -11,7 +11,7 @@ D, A, J, D, J
 A, D, J, D, D, A, J, A, A, D
 A, A
 D, A, J, D, A, D, J
-A, A, S, J, J, A, A
+A, A, A, J, J, A, A
 J, J, J, D, D, D, J, A, D
-A, A, S, J, A, A, D
+A, A, A, J, A, A, D
 A, A, J, D, D, A, J, A, A, J

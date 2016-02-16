@@ -1,0 +1,21 @@
+Fred PopcornLover,One Way Home,5
+Fred PopcornLover,Animal House,5
+Sally MovieWatcher,Alphabet,5
+Fred PopcornLover,Red Storm,2
+Tom Filmhead,Friday the 13th,1
+Sally MovieWatcher,Airplane,5
+Tom Filmhead,Running Man,5
+Sally MovieWatcher,Elf Victory,2
+Sally MovieWatcher,Stars Above,4
+Tom Filmhead,Holloween,2
+Tom Filmhead,Caddyshack,4
+Sally MovieWatcher,Iron Man,5
+Sally MovieWatcher,Truth,2
+Fred PopcornLover,Star Trek,3
+Sally MovieWatcher,Jaws,4
+Sally MovieWatcher,Batman,4
+Sally MovieWatcher,Star Wars,2
+Fred PopcornLover,Vacation,2
+Sally MovieWatcher,Rudy,4
+Fred PopcornLover,Smarth Robot,4
+Sally MovieWatcher,Spiderman,5

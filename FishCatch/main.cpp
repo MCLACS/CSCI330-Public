@@ -23,7 +23,7 @@ int main()
 	{
 		string line = in.readString();
 		vector<string> tokens = split(line, ',');
-		vector<string>::iterator start = tokens.begin()+1;
+		vector<string>::iterator start = tokens.begin();
 		vector<string>::iterator end = tokens.end();
 		for (vector<string>::iterator p = start; p!=end; p++)
 		{

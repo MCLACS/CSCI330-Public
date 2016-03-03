@@ -40,7 +40,7 @@ int main()
 		int month = atoi(tokens[0].c_str());
 		int day = atoi(tokens[1].c_str());
 		int year = atoi(tokens[2].c_str());
-		double ave = atoi(tokens[3].c_str());
+		double ave = atof(tokens[3].c_str());
 
 		stats.totDaysPerMonth[month-1] = stats.totDaysPerMonth[month-1] + 1;
 		stats.totPerMonth[month-1] = stats.totPerMonth[month-1] + ave;

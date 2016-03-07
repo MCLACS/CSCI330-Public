@@ -21,6 +21,6 @@ public:
 	friend ostream & operator << (ostream & os, const Box & box);
 };
 
-ostream & operator << (ostream & os, const Box & box);
+ostream & operator<< (ostream & os, const Box & box);
 
 #endif

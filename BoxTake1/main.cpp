@@ -12,7 +12,6 @@ int main()
 	cout << "Box1:" << endl << b1 << endl;
 
 	Box b2(b1);
-	b2.add("Yikes-B2");
-	cout << "Box1:" << endl << b1 << endl;
+	b2.add("Yikes-B2");	
 	cout << "Box2:" << endl << b2 << endl;
 }

@@ -30,10 +30,10 @@ void Box::add(const string & item)
 	}
 }
 
-ostream & operator << (ostream & os, const Box & box)
+ostream & operator<< (ostream & os, const Box & box)
 {
 	os << "Size: " << box.m_size << endl;
-	for (int i = 0; i < MAX_SIZE; i++)
+	for (int i = 0; i < box.m_size; i++)
 	{
 		if (box.m_contents[i] != "")
 			os << box.m_contents[i] << endl;

@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "Stack.h"
-#include "Node.h"
 
 using namespace std;
 

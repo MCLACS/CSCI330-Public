@@ -8,6 +8,7 @@ void checkForError()
 {
 	if (cin.fail())
 	{
+		cout << "Error: invalid uesr input!" << endl;
 		cin.clear();
 		cin.ignore(10000, '\n');
 		throw "Error: Invalid user input!";
@@ -49,6 +50,7 @@ int UserInput::readInt(const char * prompt)
   int i(0);
   cout << prompt;
   cin >> i;
+  cin.ignore(10000, '\n');
   checkForError();
   return i;
 }

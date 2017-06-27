@@ -44,6 +44,14 @@ int main()
         cout << *it << endl;
      }
 
+	 cout << trim(string("   ABCDE   ")) << endl;
+	 string tokens[5];
+     splitA(string("A,B,C,D,E"), ',', tokens, 5);
+     for (int i = 0; i < 5; i++)
+     {
+        cout << tokens[i] << endl;
+     }
+
      FileWriter fw("testWrite.txt");
      fw.writeLine("This is a line");
      fw.writeLine(string("This is a second line"));

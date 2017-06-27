@@ -70,5 +70,6 @@ char UserInput::readChar(const char * prompt)
   cout << prompt;
   cin >> ch;
   checkForError();
+  cin.ignore(10000, '\n');
   return ch;
 }

@@ -37,3 +37,25 @@ vector<string> split(const string& str, char ch)
   ret.push_back(trim(temp));
   return ret;
 }
+
+void splitA(const string& str, char ch, string tokens[], int size)
+{
+  int i = 0;
+  string temp;
+  for (string::const_iterator it = str.begin(); it != str.end(); it++)
+  {
+    if (*it != ch)
+    {
+      temp += *it;
+    }
+    else
+    {
+      tokens[i] = trim(temp);
+      temp = "";
+  	  i++;
+	  if (i == size)
+	  	break;
+    }
+  }
+  tokens[i] = trim(temp);
+}

@@ -1,0 +1,24 @@
+Tim
+Jones
+22
+Center
+
+Fred
+Smith
+24
+Small Forward
+
+Sally
+Shooter
+19
+Point Guard
+
+Kim
+Roth
+28
+Power Forward
+
+Alex
+Pall
+26
+Shooting Guard

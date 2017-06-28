@@ -1,0 +1,31 @@
+Create a Player class that represents a basketball player.  Your class should keep track of the first name, last name, age, and position of the player.  Your Player class should also provide a method that overloads the << operator to print the data for a Player.  You should print a player using the following format:
+
+	First Last (age)
+	Position
+
+Finally, create a main program that reads the five players stored in the provided players.txt file and prints them using the << operator.  When you print the players in the file you must print them in the following order:
+
+	Point Guard
+	Shooting Guard
+	Power Forward
+	Small Forward
+	Center
+
+The correct output is shown below:
+
+Sally Shooter (19)
+Point Guard
+
+Alex Pall (26)
+Shooting Guard
+
+Kim Roth (28)
+Power Forward
+
+Fred Smith (24)
+Small Forward
+
+Tim Jones (22)
+Center
+
+You might find the code in unit 01-ProceduralVsOOP/oop to be helpful when you are writing the << opeartor.

@@ -8,7 +8,6 @@ void checkForError()
 {
 	if (cin.fail())
 	{
-		cout << "Error: invalid uesr input!" << endl;
 		cin.clear();
 		cin.ignore(10000, '\n');
 		throw "Error: Invalid user input!";

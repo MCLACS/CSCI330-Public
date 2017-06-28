@@ -32,7 +32,6 @@ FileReader::~FileReader()
 
 bool FileReader::next()
 {
-  string line("");
   getline(m_input, m_lastLine);
   return (!m_input.eof());
 }

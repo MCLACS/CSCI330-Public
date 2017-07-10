@@ -1,5 +1,5 @@
 PROGRAM = BMI
-FILES = BMI.cpp ../utilities/UserInput.cpp
+FILES = BMI.cpp ../../../utilities/UserInput.cpp
 
 all: run
 run: zip

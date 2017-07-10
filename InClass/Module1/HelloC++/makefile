@@ -1,5 +1,5 @@
-PROGRAM = DogAge
-FILES = DogAge.cpp ../../../utilities/UserInput.cpp
+PROGRAM = HelloCPP
+FILES = main.cpp
 
 all: run
 run: zip

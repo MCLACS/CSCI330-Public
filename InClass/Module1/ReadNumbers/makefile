@@ -1,5 +1,5 @@
-PROGRAM = DogAge
-FILES = DogAge.cpp ../../../utilities/UserInput.cpp
+PROGRAM = ReadNumbers
+FILES = main.cpp ../../../utilities/FileReader.cpp
 
 all: run
 run: zip

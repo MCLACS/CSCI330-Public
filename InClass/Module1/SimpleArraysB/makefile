@@ -1,5 +1,5 @@
-PROGRAM = DogAge
-FILES = DogAge.cpp ../../../utilities/UserInput.cpp
+PROGRAM = SimpleArraysB
+FILES = SimpleArraysB.cpp ../../../utilities/UserInput.cpp
 
 all: run
 run: zip

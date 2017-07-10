@@ -1,26 +1,21 @@
-#include "../../../utilities/UserInput.h"
 #include <iostream>
+#include <iomanip>
+
+#include "../../../utilities/UserInput.h"
+#include "BMI.h"
 
 using namespace std;
-
-const int INC_FT = 12;
-const double MT_INC = 0.0254;
-const double LBS_KG = 2.2;
-
-// w is in kg, h is in meters
-double calculateBMI(double w, double h);
 
 int main()
 {
     UserInput in;
 
+    cout << fixed << setprecision(1);
+  
     cout << "Enter your height in feet followed by inches." << endl;
-    cout << "First enter the feet:";
-    double ft = in.readInt();
-    cout << "Next enter the inches:";
-    double inc = in.readInt();
-    cout << "Enter you weight in lbs: ";
-    double lbs = in.readInt();
+    double ft = in.readInt("First enter the feet:");
+    double inc = in.readInt("Next enter the inches:");
+    double lbs = in.readInt("Enter you weight in lbs: ");
 
     double totalInches( (ft * INC_FT) + inc);
     double meters(totalInches * MT_INC);
@@ -28,7 +23,7 @@ int main()
     double bmi = calculateBMI(kg, meters);
 
     // test your results by following this URL:
-    // http://www.bmi-calculator.net/
+    // https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm
     cout << "Your BMI is " << bmi << endl;
 
     return 0;

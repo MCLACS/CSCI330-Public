@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
 
-#include "../../../StudentFiles/CSCI330-Public/utilities/FileReader.h"
-#include "../../../StudentFiles/CSCI330-Public/utilities/FileWriter.h"
+#include "../utilities/FileReader.h"
+#include "../utilities/FileWriter.h"
 
 void readFile(const string & file, vector<string> & v);
 void writeFile(const string & file, const vector<string> & v);

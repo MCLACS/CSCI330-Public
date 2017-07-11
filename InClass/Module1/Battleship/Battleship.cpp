@@ -8,7 +8,9 @@ int main()
 {
     srand(time(NULL));
     
+    // ------------------------------------------------
     // define and setup the ocan array...
+    // ------------------------------------------------
     char ocean[ROWS][COLS] = 
     {
         '-', '-', '-', '-', '-',    
@@ -19,7 +21,9 @@ int main()
     };
     addShips(ocean);
     
+    // ------------------------------------------------
     // allow the user to attempt to sink a ship...
+    // ------------------------------------------------
     UserInput in;
     int tries(0);
     cout << "Try to sink my battleship." << endl;
@@ -32,8 +36,10 @@ int main()
         tries++;
     } while (!hit);
    
+    // ------------------------------------------------
     // print success and the number of tries and 
     // then print the board...
+    // ------------------------------------------------
     cout << "You sunk my battleship in " << tries << " tries." << endl;
     printBoard(ocean);
 }

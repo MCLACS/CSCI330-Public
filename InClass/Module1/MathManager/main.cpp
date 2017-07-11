@@ -1,13 +1,10 @@
-#include "../utilities/UserInput.h"
-#include "MathManager.h"
 #include <iostream>
 
-const int SIZE(5);
+#include "../../../utilities/UserInput.h"
+#include "MathManager.h"
+#include "main.h"
 
-void readNumbers(double ary[], int size);
-void printNumbers(double ary[], int size);
-
-int main(int argc, char * argv[])
+int main()
 {
 	double numbers[SIZE];
 	readNumbers(numbers, SIZE);

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../../StudentFiles/CSCI330-Public/utilities/UserInput.h"
+#include "../../../utilities/UserInput.h"
 
 using namespace std;
 

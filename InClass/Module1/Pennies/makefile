@@ -1,5 +1,5 @@
 PROGRAM = Pennies
-FILES = pennies.cpp ../../../StudentFiles/CSCI330-Public/utilities/UserInput.cpp
+FILES = pennies.cpp ../../../utilities/UserInput.cpp
 
 all: run
 run: zip

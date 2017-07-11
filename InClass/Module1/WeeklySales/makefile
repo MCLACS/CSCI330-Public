@@ -1,5 +1,5 @@
 PROGRAM = WeeklySales
-FILES = main.cpp ../utilities/FileReader.cpp ../MathManager/MathManager.cpp
+FILES = main.cpp ../../../utilities/FileReader.cpp ../MathManager/MathManager.cpp
 
 all: run
 run: zip

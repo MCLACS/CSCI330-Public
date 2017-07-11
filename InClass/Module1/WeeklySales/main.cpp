@@ -1,11 +1,11 @@
-#include "../utilities/FileReader.h"
-#include "../MathManager/MathManager.h"
 #include <iostream>
 #include <iomanip>
+#include "../../../utilities/FileReader.h"
+#include "../MathManager/MathManager.h"
+
+#include "main.h"
 
 using namespace std;
-
-void reportSales(const char * file);
 
 int main()
 {

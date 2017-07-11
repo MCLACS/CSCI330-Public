@@ -1,5 +1,5 @@
-PROGRAM = PIN
-FILES = main.cpp ../../../utilities/UserInput.cpp
+PROGRAM = Battleship
+FILES = Battleship.cpp ../../../utilities/UserInput.cpp
 
 all: run
 run: zip

@@ -1,12 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "../utilities/UserInput.h"
+#include "../../../utilities/UserInput.h"
+#include "main.h"
 
 using namespace std;
-
-bool checkPin(int pin[], int guess[], int length);
-void guessPin(int guess[], int length);
 
 int main()
 {

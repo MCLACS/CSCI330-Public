@@ -1,5 +1,5 @@
-#ifndef PROCEDURAL_H
-#define PROCEDURAL_H
+#ifndef MATHMANAGER_H
+#define MATHMANAGER_H
 
 double sum(double ary[], int size);
 double average(double ary[], int size);

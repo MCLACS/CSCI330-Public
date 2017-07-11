@@ -1,5 +1,5 @@
-PROGRAM = PIN
-FILES = main.cpp ../../../utilities/UserInput.cpp
+PROGRAM = Pair
+FILES = Pair.cpp
 
 all: run
 run: zip

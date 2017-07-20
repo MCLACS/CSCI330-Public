@@ -1,4 +1,4 @@
-#include "../utilities/UserInput.h"
+#include "../../../utilities/UserInput.h"
 #include "MathManager.h"
 #include <iostream>
 #include <vector>
@@ -10,7 +10,7 @@ const int SIZE(5);
 void readNumbers(vector<double> & nums, int size);
 void printNumbers(const vector<double> &);
 
-int main(int argc, char * argv[])
+int main()
 {
 	vector<double> numbers;
 	readNumbers(numbers, SIZE);
@@ -35,9 +35,9 @@ void readNumbers(vector<double> & nums, int size)
 void printNumbers(const vector<double> & nums)
 {
 	cout << "Numbers: ";
-	vector<double>::const_iterator vbegin = nums.begin();
-	vector<double>::const_iterator vend = nums.end();
-	for (vector<double>::const_iterator p = vbegin; p != vend; p++)
+	for (vector<double>::const_iterator p = nums.begin(); 
+		 p != nums.end(); 
+		 p++)
 	{
 		cout << *p << " ";
 	}

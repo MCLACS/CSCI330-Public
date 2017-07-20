@@ -1,5 +1,5 @@
-PROGRAM = RandomQuote
-FILES = main.cpp ../../../utilities/FileReader.cpp
+PROGRAM = intersect
+FILES = ../../../../utilities/FileReader.cpp main.cpp
 
 all: run
 run: zip
@@ -18,8 +18,8 @@ build:
 	clear
 	clear
 	clear
-	g++ $(FILES) -o $(PROGRAM).o
-
+	g++ -std=c++11 $(FILES) -o $(PROGRAM).o
+    
 clean:
 	rm -f *.zip
 	rm -f *.o

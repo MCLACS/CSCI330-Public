@@ -1,23 +1,25 @@
 #include <iostream>
 #include <string>
 
-void changeIntRef(const int& i);
-void changeStringRef(const std::string& s);
+using namespace std;
 
-std::string& pluralize(const std::string& s);
+void changeIntRef(const int& i);
+void changeStringRef(const string& s);
+
+string& pluralize(const string& s);
 
 int main(int argc, char * argv[])
 {
 	int i(10);
 	changeIntRef(i);
-	std::cout << i << std::endl;
+	cout << i << endl;
 
-	std::string s("Run");
+	string s("Run");
 	changeStringRef(s);
-	std::cout << s << std::endl;
+	cout << s << endl;
 
 	s = pluralize("Apple");
-	std::cout << s << std::endl;
+	cout << s << endl;
 }
 
 void changeIntRef(const int& i)
@@ -25,13 +27,16 @@ void changeIntRef(const int& i)
 	//i = 100; // causes a compile error because i is a const reference
 }
 
-void changeStringRef(const std::string& s)
+void changeStringRef(const string& s)
 {
 	//s = s + " fast!"; // causes a compile error because s is a const reference
 }
 
-std::string& pluralize(const std::string& s)
+string& pluralize(const string& s)
 {
-	std::string ret(s+"s");
-	return ret;
+	// causes a run time error because we are returning 
+	// a reference to a local variable...
+	
+	// string ret(s+"s"); 
+	// return ret;
 }

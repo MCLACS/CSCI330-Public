@@ -1,5 +1,5 @@
 PROGRAM = Lottery
-FILES = main.cpp ../../../StudentFiles/CSCI330-Public/utilities/FileReader.cpp ../../../StudentFiles/CSCI330-Public/utilities/UserInput.cpp ../../../StudentFiles/CSCI330-Public/utilities/helper.cpp
+FILES = main.cpp ../../../utilities/FileReader.cpp ../../../utilities/UserInput.cpp ../../../utilities/helper.cpp
 
 all: run
 run: zip

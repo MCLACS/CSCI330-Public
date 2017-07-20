@@ -1,5 +1,5 @@
-PROGRAM = program_name
-FILES = FileReader.cpp main.cpp
+PROGRAM = Sort
+FILES = main.cpp ../../../utilities/FileReader.cpp ../../../utilities/FileWriter.cpp
 
 all: run
 run: zip
@@ -11,7 +11,7 @@ run:
 
 zip:
 	rm -f $(PROGRAM).zip
-	zip $(PROGRAM).zip *.cpp *.h makefile
+	zip $(PROGRAM).zip *.cpp *.h *.txt makefile
 
 build:
 	clear
@@ -19,7 +19,7 @@ build:
 	clear
 	clear
 	g++ -std=c++11 $(FILES) -o $(PROGRAM).o
-    
+
 clean:
 	rm -f *.zip
 	rm -f *.o

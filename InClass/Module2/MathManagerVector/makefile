@@ -1,5 +1,5 @@
 PROGRAM = MathManager
-FILES = main.cpp MathManager.cpp ../utilities/UserInput.cpp
+FILES = main.cpp MathManager.cpp ../../../utilities/UserInput.cpp
 
 all: run
 run: zip

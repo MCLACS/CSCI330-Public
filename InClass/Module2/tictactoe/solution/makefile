@@ -1,5 +1,5 @@
 PROGRAM = tictactoe
-FILES = main.cpp FileReader.cpp
+FILES = main.cpp ../../../../utilities/FileReader.cpp
 
 all: run
 run: zip

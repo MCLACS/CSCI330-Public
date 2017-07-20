@@ -2,16 +2,16 @@
 #include <string>
 #include <iostream>
 
-#include "FileReader.h"
+#include "../../../../utilities/FileReader.h"
 using namespace std;
 
 vector<char> readfile(string file)
 {
 	vector<char> state;
 	FileReader in(file);
-	while (!in.endOfFile())
+	while (in.next())
 	{
-		string s = in.readLine();
+		string s = in.readString();
 		state.push_back(s[0]);
 	}	
 	return state;
@@ -28,7 +28,7 @@ bool gameover(vector<char> state)
 	else if (state[6] != '-' && state[6] == state[7] && state[7] == state[8])
 		return true;
 
-	// checl for vertical victory
+	// check for vertical victory
 	else if (state[0] != '-' && state[0] == state[3] && state[3] == state[6])
 		return true;
 	else if (state[1] != '-' && state[1] == state[4] && state[4] == state[7])

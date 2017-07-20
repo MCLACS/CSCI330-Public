@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../../../StudentFiles/CSCI330-Public/utilities/FileReader.h"
-#include "../../../StudentFiles/CSCI330-Public/utilities/UserInput.h"
-#include "../../../StudentFiles/CSCI330-Public/utilities/helper.h"
+#include "../../../utilities/FileReader.h"
+#include "../../../utilities/UserInput.h"
+#include "../../../utilities/helper.h"
 
 using namespace std;
 

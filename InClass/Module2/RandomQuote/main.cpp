@@ -3,12 +3,10 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "../utilities/FileReader.h"
+#include "../../../utilities/FileReader.h"
+#include "main.h"
 
 using namespace std;
-
-string pickChoice(const vector<string> & v);
-void loadQuotes(vector<string> & v);
 
 int main()
 {

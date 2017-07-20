@@ -1,5 +1,5 @@
 PROGRAM = Shuffle
-FILES = main.cpp ../utilities/FileReader.cpp ../utilities/FileWriter.cpp
+FILES = main.cpp ../../../utilities/FileReader.cpp ../../../utilities/FileWriter.cpp
 
 all: run
 run: zip

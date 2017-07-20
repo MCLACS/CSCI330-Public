@@ -1,39 +1,31 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 void changeInt(int i);
 void changeIntRef(int& i);
-void changeInt(int * pI);
 
-void changeString(std::string s);
-void changeStringRef(std::string& s);
-void changeString(std::string * pS);
+void changeString(string s);
+void changeStringRef(string& s);
 
-int main(int argc, char * argv[])
+int main()
 {
 	int i = 10;
 	changeInt(i);
-	std::cout << i << std::endl;
+	cout << i << endl;
 
 	i = 10;
 	changeIntRef(i);
-	std::cout << i << std::endl;
+	cout << i << endl;
 
-	i = 10;
-	changeInt(&i);
-	std::cout << i << std::endl;
-
-	std::string s("Run");
+	string s("Run");
 	changeString(s);
-	std::cout << s << std::endl;
+	cout << s << endl;
 
 	s = "Run";
 	changeStringRef(s);
-	std::cout << s << std::endl;
-
-	s = "Run";
-	changeString(&s);
-	std::cout << s << std::endl;
+	cout << s << endl;
 }
 
 void changeInt(int i)
@@ -51,17 +43,12 @@ void changeInt(int * pI)
 	*pI = 100;
 }
 
-void changeString(std::string s)
+void changeString(string s)
 {
 	s = " fast!";
 }
 
-void changeStringRef(std::string& s)
+void changeStringRef(string& s)
 {
 	s = s + " fast!";
-}
-
-void changeString(std::string * pS)
-{
-	*pS = *pS + " fast!";
 }

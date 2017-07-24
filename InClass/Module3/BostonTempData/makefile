@@ -1,5 +1,5 @@
 PROGRAM = Boston
-FILES = main.cpp ../utilities/FileReader.cpp ../utilities/Helper.cpp
+FILES = main.cpp ../../../utilities/FileReader.cpp ../../../utilities/helper.cpp
 
 all: run
 run: zip

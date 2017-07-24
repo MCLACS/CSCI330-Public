@@ -2,8 +2,8 @@
 #include <string>
 #include <vector>
 #include <iomanip>
-#include "../utilities/FileReader.h"
-#include "../utilities/helper.h"
+#include "../../../utilities/FileReader.h"
+#include "../../../utilities/helper.h"
 
 struct Counts
 {
@@ -23,9 +23,7 @@ int main()
 	{
 		string line = in.readString();
 		vector<string> tokens = split(line, ',');
-		vector<string>::iterator start = tokens.begin();
-		vector<string>::iterator end = tokens.end();
-		for (vector<string>::iterator p = start; p!=end; p++)
+		for (vector<string>::iterator p = tokens.begin(); p!=tokens.end(); p++)
 		{
 			string token = trim(*p);
 			if (token == "A")

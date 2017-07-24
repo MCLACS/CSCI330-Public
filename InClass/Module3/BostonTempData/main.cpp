@@ -1,32 +1,24 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
-#include "../utilities/FileReader.h"
-#include "../utilities/helper.h"
+#include "../../../utilities/FileReader.h"
+#include "../../../utilities/helper.h"
+
+#include "main.h"
 
 using namespace std;
-
-struct Data
-{
-	double totDaysPerMonth[12];
-	double totPerMonth[12];
-	double avePerMonth[12];
-	double totDaysPerYear[22];
-	double totPerYear[22];
-	double avePerYear[22];
-};
 
 int main()
 {
 	FileReader in("temps.txt");
 	Data stats;
-	for (int i = 0; i < 22; i++)
+	for (int i = 0; i < YEARS; i++)
 	{
 		stats.totDaysPerYear[i] = 0.0;
 		stats.totPerYear[i] = 0.0;
 		stats.avePerYear[i] = 0.0;
 	}
-	for (int i = 0; i < 12; i++)
+	for (int i = 0; i < MONTHS_IN_YEAR; i++)
 	{
 		stats.totDaysPerMonth[i] = 0.0;
 		stats.totPerMonth[i] = 0.0;
@@ -51,8 +43,8 @@ int main()
 		stats.avePerYear[year-1995] = (stats.totPerYear[year-1995] / stats.totDaysPerYear[year-1995]);
 	}
 
-	for (int i = 0; i < 12; i++)
+	for (int i = 0; i < MONTHS_IN_YEAR; i++)
 		cout << "avePerMonth "<< (i+1) << ": " << stats.avePerMonth[i] << endl;
-	for (int i = 0; i < 22; i++)
+	for (int i = 0; i < YEARS; i++)
 		cout << "avePerYear " << (i+1995) << ": " << stats.avePerYear[i] << endl;
 }

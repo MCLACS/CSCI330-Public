@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+using namespace std;
+
 struct Review
 {
 	string movie;
@@ -16,9 +18,9 @@ struct Reviewer
 	vector<Review> reviews;
 };
 
-void readFile(vector<Reviewer> & reviews);
-void addReview(const Reviewer & reviewer, const Review & review,
-	vector<Reviewer> & reviews);
+void readFile(vector<Reviewer> & reviewers);
+void addReview(Reviewer & reviewer, const Review & review,
+	vector<Reviewer> & reviewers);
 void print(const vector<Reviewer> & reviewers);
 
 #endif

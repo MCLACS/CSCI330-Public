@@ -1,21 +1,22 @@
-#include "../utilities/FileReader.h"
-#include "../utilities/helper.h"
-#include "main.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <cstdlib>
 
+#include "../../../utilities/FileReader.h"
+#include "../../../utilities/helper.h"
+#include "main.h"
+
 using namespace std;
 
 int main()
 {
-	vector<Reviewer> r;
-	readFile(r);
-	print(r);
+	vector<Reviewer> reviewers;
+	readFile(reviewers);
+	print(reviewers);
 }
 
-void readFile(vector<Reviewer> & reviews)
+void readFile(vector<Reviewer> & reviewers)
 {
 	FileReader in("reviews.txt");
 	while (in.next())
@@ -32,18 +33,15 @@ void readFile(vector<Reviewer> & reviews)
 
 		Reviewer reviewer;
 		reviewer.name = name;
-		reviewer.reviews.push_back(review);
-		addReview(reviewer, review, reviews);
+		addReview(reviewer, review, reviewers);
 	}
 }
 
-void addReview(const Reviewer & reviewer, const Review & review,
-	vector<Reviewer> & reviews)
+void addReview(Reviewer & reviewer, const Review & review,
+	vector<Reviewer> & reviewers)
 {
 	bool found = false;
-	vector<Reviewer>::iterator start = reviews.begin();
-	vector<Reviewer>::iterator end = reviews.end();
-	for (vector<Reviewer>::iterator p = start; p != end; p++)
+	for (vector<Reviewer>::iterator p = reviewers.begin(); p != reviewers.end(); p++)
 	{
 		if ((*p).name == reviewer.name)
 		{
@@ -54,19 +52,18 @@ void addReview(const Reviewer & reviewer, const Review & review,
 	}
 
 	if (!found)
-		reviews.push_back(reviewer);
+	{
+		reviewer.reviews.push_back(review);
+		reviewers.push_back(reviewer);
+	}
 }
 
 void print(const vector<Reviewer> & reviewers)
 {
-	vector<Reviewer>::const_iterator start1 = reviewers.begin();
-	vector<Reviewer>::const_iterator end1 = reviewers.end();
-	for (vector<Reviewer>::const_iterator p1 = start1; p1 != end1; p1++)
+	for (vector<Reviewer>::const_iterator p1 = reviewers.begin(); p1 != reviewers.end(); p1++)
 	{
 		cout << (*p1).name << endl;
-		vector<Review>::const_iterator start2 = (*p1).reviews.begin();
-		vector<Review>::const_iterator end2 = (*p1).reviews.end();
-		for (vector<Review>::const_iterator p2 = start2; p2 != end2; p2++)
+		for (vector<Review>::const_iterator p2 = (*p1).reviews.begin(); p2 != (*p1).reviews.end(); p2++)
 		{
 			cout << "\t" << (*p2).movie << " " << (*p2).stars
 				<< " stars." << endl;

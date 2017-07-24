@@ -1,5 +1,5 @@
 PROGRAM = movies
-FILES = main.cpp ../utilities/FileReader.cpp ../utilities/helper.cpp
+FILES = main.cpp ../../../utilities/FileReader.cpp ../../../utilities/helper.cpp
 
 all: run
 run: zip

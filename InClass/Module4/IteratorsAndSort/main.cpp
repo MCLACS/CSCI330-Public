@@ -9,28 +9,30 @@ using namespace std;
 int main()
 {
   	char ary[] = "MCLA ALL THE WAY!";
-	vector<char> vChars(ary, ary+strlen(ary));
-  	string sChars(ary);
-
   	char * abegin = ary;
   	char * aend = (ary+strlen(ary));
+  	
+	vector<char> vChars(abegin, aend);
+  	vector<char>::iterator vbegin = vChars.begin();
+	vector<char>::iterator vend = vChars.end();
+
+  	string sChars(abegin);
+	string::iterator sbegin = sChars.begin();
+	string::iterator send = sChars.end();
+  	
   	for (char * p = abegin; p != aend; p++)
 		cout << *p;
 	cout << endl;
-
-	vector<char>::iterator vbegin = vChars.begin();
-	vector<char>::iterator vend = vChars.end();
+	
 	for (vector<char>::iterator p = vbegin; p != vend; p++)
 		cout << *p;
 	cout << endl;
 
-	string::iterator sbegin = sChars.begin();
-	string::iterator send = sChars.end();
 	for (string::iterator p = sbegin; p != send; p++)
 		cout << *p;
 	cout << endl;
 
-	sort(ary, ary+strlen(ary));
+	sort(abegin, aend);
   	for (char * p = abegin; p != aend; p++)
 		cout << *p;
 	cout << endl;
@@ -45,12 +47,6 @@ int main()
 		cout << *p;
 	cout << endl;
 
-	const vector<char> constV(ary, ary+strlen(ary));
-  	vector<char>::const_iterator cvbegin = constV.begin();
-	vector<char>::const_iterator cvend = constV.end();
-	for (vector<char>::const_iterator p = cvbegin; p != cvend; p++)
-		cout << *p;
-	cout << endl;
 
 	return 0;
 }

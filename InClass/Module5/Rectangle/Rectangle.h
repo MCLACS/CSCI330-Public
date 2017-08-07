@@ -30,10 +30,11 @@ public:
 	// operator overloads
 	Rectangle & operator=(const Rectangle& other);
 	bool operator==(const Rectangle& other);
-	friend ostream & operator <<(ostream & os, const Rectangle & x);
+	
+	friend ostream & operator<<(ostream & os, const Rectangle & x);
 };
 
 // prototype for the global operator<< function
-ostream & operator << (ostream & os, const Rectangle & x);
+ostream & operator<<(ostream & os, const Rectangle & x);
 
 #endif

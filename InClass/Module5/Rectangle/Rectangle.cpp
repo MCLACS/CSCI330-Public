@@ -15,8 +15,7 @@ Rectangle::Rectangle(const Rectangle & other) :
 
 Rectangle::Rectangle(int w, int h, int x, int y) :
 	m_w(w), m_h(h), m_x(x), m_y(y)
-{
-}
+{ }
 
 // dtor...
 Rectangle::~Rectangle()
@@ -52,7 +51,7 @@ bool Rectangle::operator==(const Rectangle& other)
 	);
 }
 
-ostream & operator<< (ostream & os, const Rectangle & x)
+ostream & operator<<(ostream & os, const Rectangle & x)
 {
 	os << "I am a rectangle, here is my state:" << endl;
 	os << "W="<< x.m_w << " H=" << x.m_h << " X=" << x.m_x << " Y=" << x.m_y << endl;

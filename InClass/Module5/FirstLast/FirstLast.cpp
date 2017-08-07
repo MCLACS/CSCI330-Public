@@ -35,7 +35,7 @@ string FirstLast::shortName() const
  	 return m_first.substr(0, 1) + ". " + m_last;
 }
 
-ostream & operator << (ostream & os, const FirstLast & x)
+ostream & operator<<(ostream & os, const FirstLast & x)
 {
 	os << x.fullName();
 	return os;

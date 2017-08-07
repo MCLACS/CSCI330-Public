@@ -1,35 +1,33 @@
-#ifndef `CLASSNAME`_H
-#define `CLASSNAME`_H
+#ifndef CLASSNAME_H
+#define CLASSNAME_H
 
 #include <iostream>
 
 using namespace std;
 
-class `CLASSNAME`
+class CLASSNAME
 {
 private:
 	// class state ...
-	`TYPE` m_`ATTRIBUTE_NAME`;
-	`TYPE` m_`ATTRIBUTE_NAME`;
+	TYPE m_ATTRIBUTE_NAME;
+	TYPE m_ATTRIBUTE_NAME;
 
 public:
 	// behavior...
 
-	`CLASSNAME`(); // default ctor
-	`CLASSNAME`(const `CLASSNAME` & other); // copy ctor
+	CLASSNAME(); // default ctor
+	CLASSNAME(const CLASSNAME & other); // copy ctor
 
-	virtual ~`CLASSNAME`(); // destructor
+	virtual ~CLASSNAME(); // destructor
 
 	// additional methods
 	// ...
 
 	// operator overloads
-	`CLASSNAME` & operator=(const `CLASSNAME`& other);
-	bool operator==(const `CLASSNAME`& other);
-	friend ostream & operator <<(ostream & os, const `CLASSNAME` & x);
+	friend ostream & operator<<(ostream & os, const CLASSNAME & x);
 };
 
 // prototype for the global operator<< function
-ostream & operator << (ostream & os, const `CLASSNAME` & x);
+ostream & operator<<(ostream & os, const CLASSNAME & x);
 
 #endif

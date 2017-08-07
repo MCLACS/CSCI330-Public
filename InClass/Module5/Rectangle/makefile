@@ -1,5 +1,5 @@
-PROGRAM = sets
-FILES = Set.cpp main.cpp ../../../utilities/StringFunctions.cpp
+PROGRAM = Box
+FILES = Rectangle.cpp RectangleMain.cpp
 
 all: run
 run: zip
@@ -14,8 +14,12 @@ zip:
 	zip $(PROGRAM).zip *.cpp *.h makefile
 
 build:
-	g++ -std=c++11 $(FILES) -o $(PROGRAM).o
-    
+	clear
+	clear
+	clear
+	clear
+	g++ $(FILES) -o $(PROGRAM).o
+
 clean:
 	rm -f *.zip
 	rm -f *.o

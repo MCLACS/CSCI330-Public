@@ -2,7 +2,7 @@
 #include <string>
 
 #include "Set.h"
-#include "StringFunctions.h"
+#include "../../../utilities/StringFunctions.h"
 
 using namespace std;
 
@@ -38,15 +38,18 @@ bool Set::add(const string& item)
 
 bool Set::remove(const string& item)
 {
+	bool ret = false;
 	for (vector<string>::iterator it = m_items.begin(); 
 			it!=m_items.end(); it++)
 	{
 		if (*it == item)
 		{
 			m_items.erase(it);
+			ret = true;
 			break;
 		}
-	}	
+	}
+	return ret;
 }
 
 void Set::removeAll()

@@ -31,10 +31,10 @@ public:
 	string shortName() const;
 
 	// operator overloads
-	friend ostream & operator <<(ostream & os, const FirstLast & x);
+	friend ostream & operator<<(ostream & os, const FirstLast & x);
 };
 
 // prototype for the global operator<< function
-ostream & operator << (ostream & os, const FirstLast & x);
+ostream & operator<<(ostream & os, const FirstLast & x);
 
 #endif

@@ -12,16 +12,16 @@ int main()
 	s2.add("hello");
 	s2.add("run");
 
-	Set s3 = s1 + s2;
-	Set s4 = s1 - s2;
-	Set s5 = s1 * s2;
+	Set s3 = s1 + s2;  
+	Set s4 = s1 - s2;  
+	Set s5 = s1 * s2;  
 
-	cout << s1 << endl;
-	cout << s2 << endl;
-	cout << s3 << endl;
-	cout << s4 << endl;
-	cout << s5 << endl;
+	cout << s1 << endl; // hello, bye
+	cout << s2 << endl; // hello, run
+	cout << s3 << endl; // hello, bye, run
+	cout << s4 << endl; // bye
+	cout << s5 << endl; // hello
 
 	!s1;
-	cout << s1 << endl;
+	cout << s1 << endl; // HELLO, BYE
 }

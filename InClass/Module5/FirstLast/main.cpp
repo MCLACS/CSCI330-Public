@@ -10,5 +10,6 @@ int main()
 	cout << "First Last: " << fl.fullName() << endl;
 	cout << "Last, First: " << fl.lastFirst() << endl;
 	cout << "Short Name: " << fl.shortName() << endl;
+	
 	cout << "Default: " << fl << endl;
 }

@@ -21,5 +21,5 @@ Simple & Simple::operator=(const Simple& other)
 
 Simple::~Simple()
 {
-		cout << "Destructor called!" << endl;
+	cout << "Destructor called!" << endl;
 }

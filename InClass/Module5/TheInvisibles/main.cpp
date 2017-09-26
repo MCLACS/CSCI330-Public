@@ -26,6 +26,6 @@ int main()
 
 	s4 = foo(s3);
 
-	cout << endl;
-	cout << endl;
+	// cout << endl;
+	// cout << endl;
 }

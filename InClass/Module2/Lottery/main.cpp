@@ -8,14 +8,17 @@
 
 using namespace std;
 
+const int NUMS = 70;
+
 int topNum(const vector<int> & counts);
 void updateCounts(vector<int> & counts, vector<string> & line);
 vector<int> bestBet(const vector<int> & counts);
+void printCounts(const vector<int> & c);
 
 int main()
 {
 	vector<int> counts;
-	for (int i = 0; i < 70; i++)
+	for (int i = 0; i < NUMS; i++)
 		counts.push_back(0);
 
 	FileReader f("Powerball.txt");
@@ -25,6 +28,8 @@ int main()
 		vector<string> f = split(line, ',');
 		updateCounts(counts, f);
 	}
+
+	printCounts(counts);
 
 	UserInput in;
 	while(true)
@@ -69,6 +74,16 @@ int main()
 	}
 }
 
+void printCounts(const vector<int> & c)
+{
+	int count = 1;
+	for (vector<int>::const_iterator it = c.begin(); it != c.end(); it++)
+	{
+		cout << count << "->" << (*it) << endl;
+		count++;
+	}
+}
+
 void updateCounts(vector<int> & c, vector<string> & line)
 {
 	for (vector<string>::iterator it = line.begin(); it != line.end(); it++)
@@ -95,7 +110,7 @@ int topNum(const vector<int> & counts)
 {
 	int max = 0;
 	int maxNum = 0;
-	for (int i = 1; i < 70; i++)
+	for (int i = 1; i < NUMS; i++)
 	{
 		if (counts[i] >= max)
 		{

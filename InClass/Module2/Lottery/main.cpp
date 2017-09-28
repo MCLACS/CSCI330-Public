@@ -89,7 +89,7 @@ void updateCounts(vector<int> & c, vector<string> & line)
 	for (vector<string>::iterator it = line.begin(); it != line.end(); it++)
 	{
 		int num = atoi((*it).c_str());
-		c[num] = c[num]+1;
+		c[num-1] = c[num-1]+1;
 	}
 }
 

@@ -72,7 +72,7 @@ Rectangle & Rectangle::operator++()
 
 Rectangle Rectangle::operator++(int i)
 {
-  Rectangle ret(m_w+1, m_h+1, m_x, m_y);
+  Rectangle ret(m_w, m_h, m_x, m_y);
   m_w = m_w+1;
   m_h= m_h+1;
   return ret;

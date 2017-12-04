@@ -32,6 +32,6 @@ int main(int argc, char * argv[])
 
 	delete p5; 
 	delete p2;
-	delete p1;
 	delete pAt;
+	delete p1;
 }

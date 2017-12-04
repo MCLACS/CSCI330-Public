@@ -13,6 +13,9 @@ Box::Box() : m_size(0)
 Box::Box(const Box & other)
 {
 	m_size = other.m_size;
+	
+	// m_contents = other.m_contents;
+	
 	for (int i = 0; i < m_size; i++)
 		m_contents[i] = other.m_contents[i];
 }

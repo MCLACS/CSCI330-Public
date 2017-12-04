@@ -14,7 +14,6 @@ int main(int argc, char * argv[])
 
 	foo();
 	LifeTracker m2("two");
-
 	{
 		LifeTracker m3("three");
 		{

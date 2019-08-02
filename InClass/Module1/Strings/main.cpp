@@ -10,25 +10,28 @@ using namespace std;
 
 int main()
 {
+	// c strings...
+	
 	char cs1[] = "Hello";
 	char cs2[] = "Bye";
-	char cs3[strlen(cs1) + strlen(cs2) + 1];
-	cs3[0] = 0;
 	
 	cout << "cs1 = " << cs1 << endl;
 	cout << "cs2 = " << cs2 << endl;
 	cout << "Length of cs1 = " << calcLength(cs1) << "/" << strlen(cs1) << endl;
 	
+	char cs3[strlen(cs1) + strlen(cs2) + 1];
+	cs3[0] = 0;	
 	cout << "strlen(cs3) = " << strlen(cs3) << endl;
 	cout << "sizeof(cs3) = " << sizeof(cs3) << endl;
 	
 	strncat(cs3, cs1, strlen(cs1));
 	strncat(cs3, cs2, strlen(cs2));
-	cout << "cs1 + cs2 = " << cs3 << endl;
-	 
+	cout << "cs1 + cs2 = " << cs3 << endl; 
 	 
 	cout << endl;
-		
+	
+	
+	// c++ strings
 		 
 	string s1("Hello");
 	string s2("Bye");

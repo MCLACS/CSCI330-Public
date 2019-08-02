@@ -49,7 +49,6 @@ int UserInput::readInt(const char * prompt)
   int i(0);
   cout << prompt;
   cin >> i;
-  cin.ignore(10000, '\n');
   checkForError();
   return i;
 }
@@ -69,6 +68,5 @@ char UserInput::readChar(const char * prompt)
   cout << prompt;
   cin >> ch;
   checkForError();
-  cin.ignore(10000, '\n');
   return ch;
 }

@@ -19,6 +19,7 @@ int main()
     		string tokens[2];
     		splitA(line, ',', tokens, 2);
     		int tempA = atoi(tokens[0].c_str());
+            int temA = stoi(tokens[0]);
     		int tempB = atoi(tokens[1].c_str());
     		int delta = tempB - tempA;
     		

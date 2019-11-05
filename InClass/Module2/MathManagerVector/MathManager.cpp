@@ -7,9 +7,7 @@ using namespace std;
 double sum(const vector<double> & nums)
 {
 	double total(0);
-	vector<double>::const_iterator vbegin = nums.begin();
-	vector<double>::const_iterator vend = nums.end();
-	for (vector<double>::const_iterator p = vbegin; p != vend; p++)
+	for (auto p = nums.begin(); p != nums.end(); p++)
 	{
 		total += *p;
 	}
